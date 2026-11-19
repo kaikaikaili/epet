@@ -1,0 +1,18 @@
+# ============ macOS Swift (focus-pet) ============
+focus-pet/.build/
+focus-pet/dist/
+focus-pet/Package.resolved
+focus-pet/*.xcodeproj/
+
+# ============ Windows Electron (focus-pet-win) ============
+focus-pet-win/node_modules/
+focus-pet-win/dist/
+focus-pet-win/package-lock.json
+
+# ============ 通用 ============
+.DS_Store
+*.log
+.user/
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,31 @@
+{
+  "name": "focus-pet",
+  "version": "1.0.0",
+  "description": "桌面小宠物 - 专注 / 养成 / AI 聊天",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0"
+  },
+  "build": {
+    "appId": "com.likai.focuspet",
+    "productName": "麻薯",
+    "files": ["electron/**/*", "src/**/*"],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.productivity"
+    }
+  }
+}

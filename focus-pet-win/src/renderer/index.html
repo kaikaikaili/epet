@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>麻薯</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:100%; height:100%; overflow:hidden; background:transparent; -webkit-app-region:no-drag; font-family:-apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; }
+  body > #root { width:100%; height:100%; }
+  /* 底部 64px 区域留给按钮，其余可拖拽 */
+  .drag { -webkit-app-region: drag; }
+  .no-drag { -webkit-app-region: no-drag; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
